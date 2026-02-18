@@ -5,7 +5,7 @@ HISTORY_EXCLUDE_PATTERN='^ |//([^/]+:[^/]+)@|KEY[=:] *([^ ]+)|TOKEN[=:] *([^ ]+)
 # See
 # - https://zsh.sourceforge.io/Doc/Release/Functions.html for docs on zshaddhistory
 # - https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html for docs on print
-function zshaddhistory() {
+function _zsh-mask-addhistory() {
   emulate -L zsh
   unsetopt case_match
 
@@ -27,3 +27,6 @@ function zshaddhistory() {
     return 1
   fi
 }
+
+autoload -Uz add-zsh-hook
+add-zsh-hook zshaddhistory _zsh-mask-addhistory
