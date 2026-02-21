@@ -64,7 +64,7 @@ source /path/to/zsh-mask.zsh
 Using [**Antibody**](https://getantibody.github.io)
 
 ```
-antibody bundle jgogstad/zsh-mask
+antibody bundle andres-halls/zsh-mask
 ```
 
 Using [**ZInit**](https://github.com/zdharma/zinit)
@@ -72,7 +72,7 @@ Using [**ZInit**](https://github.com/zdharma/zinit)
 Add the following to `.zshrc`
 
 ```bash
-zinit light jgogstad/zsh-mask
+zinit light andres-halls/zsh-mask
 ```
 
 Using [**ZPlug**](https://github.com/zplug/zplug)
@@ -80,12 +80,12 @@ Using [**ZPlug**](https://github.com/zplug/zplug)
 Add the following to `.zshrc`
 
 ```bash
-zplug 'jgogstad/zsh-mask'
+zplug 'andres-halls/zsh-mask'
 ```
 
 Using [**Oh My Zsh**](https://ohmyz.sh/)
 
-`git clone https://github.com/jgogstad/zsh-mask ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-mask`
+`git clone https://github.com/andres-halls/zsh-mask ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-mask`
 
 Add the following to `.zshrc`
 
